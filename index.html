@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <!-- Request MetaTags -->
+    <meta charset="UTF-8">
+    <title>Hacked By Mrlinkerrorsystem</title>
+
+  <meta name="description" content="Ekspektasi merupakan akar dari segala sakit hati.">
+
+  <meta name=googlebot content="all,index,follow">
+
+  <meta name=allow-search content=yes>
+
+  <meta name=audience content=all> 
+
+  <meta name=copyright content="Copyright ;copy Takeover With Domain"> 
+
+  <meta property="og:title" content="Lah Kok Ke Hek"> 
+
+  <meta property="og:image" content="https://i.ibb.co/KsDrKL5/anjg.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.ibb.co/KsDrKL5/anjg.png">
+    <!-- Special Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Almendra+Display|Almendra+SC|Piedra&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Modak&amp;family=Rowdies&amp;display=swap" rel="stylesheet"> 
+  </head>
+  <!-- Main Style -->
+<script type="text/javascript">
+
+var snowmax=35
+var snowcolor=new Array("#AAAACC","#DDDDFF","#CCCCDD","#F3F3F3","#F0FFFF")
+var snowtype=new Array("Arial Black","Arial Narrow","Times","Comic Sans MS")
+var snowletter="*"
+var sinkspeed=0.6
+var snowmaxsize=22
+var snowminsize=8
+var snowingzone=1
+
+// Do not edit below this line
+var snow=new Array()
+var marginbottom
+var marginright
+var timer
+var i_snow=0
+var x_mv=new Array();
+var crds=new Array();
+var lftrght=new Array();
+var browserinfos=navigator.userAgent 
+var ie5=document.all&&document.getElementById&&!browserinfos.match(/Opera/)
+var ns6=document.getElementById&&!document.all
+var opera=browserinfos.match(/Opera/)  
+var browserok=ie5||ns6||opera
+
+function randommaker(range) {		
+	rand=Math.floor(range*Math.random())
+  return rand
+}
+
+function initsnow() {
+	if (ie5 || opera) {
+		marginbottom = document.body.clientHeight
+		marginright = document.body.clientWidth
+	}
+	else if (ns6) {
+		marginbottom = window.innerHeight
+		marginright = window.innerWidth
+	}
+	var snowsizerange=snowmaxsize-snowminsize
+	for (i=0;i<=snowmax;i++) {
+		crds[i] = 0;                      
+  	lftrght[i] = Math.random()*15;         
+  	x_mv[i] = 0.03 + Math.random()/10;
+		snow[i]=document.getElementById("s"+i)
+		snow[i].style.fontFamily=snowtype[randommaker(snowtype.length)]
+		snow[i].size=randommaker(snowsizerange)+snowminsize
+		snow[i].style.fontSize=snow[i].size
+		snow[i].style.color=snowcolor[randommaker(snowcolor.length)]
+		snow[i].sink=sinkspeed*snow[i].size/5
+		if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+		if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+		if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+		if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+		snow[i].posy=randommaker(2*marginbottom-marginbottom-2*snow[i].size)
+		snow[i].style.left=snow[i].posx
+		snow[i].style.top=snow[i].posy
+	}
+	movesnow()
+}
+
+function movesnow() {
+	for (i=0;i<=snowmax;i++) {
+		crds[i] += x_mv[i];
+		snow[i].posy+=snow[i].sink
+		snow[i].style.left=snow[i].posx+lftrght[i]*Math.sin(crds[i]);
+		snow[i].style.top=snow[i].posy
+		
+		if (snow[i].posy>=marginbottom-2*snow[i].size || parseInt(snow[i].style.left)>(marginright-3*lftrght[i])){
+			if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+			if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+			if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+			if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+			snow[i].posy=0
+		}
+	}
+	var timer=setTimeout("movesnow()",50)
+}
+
+for (i=0;i<=snowmax;i++) {
+	document.write("<span id='s"+i+"' style='position:absolute;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
+}
+if (browserok) {
+	window.onload=initsnow
+}
+</script>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #000000;
+      background-size:600px;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-attachment: fixed;
+      text-align: center;
+    }
+    .container {
+      margin-top: 35%;
+    }
+    img {
+      width: 250px;
+      height: 250px;
+      border: 1px solid #FFFFFF;
+      border-radius: 3px;
+      background: transparent;
+      color: #FFFFFF;
+      box-shadow: 2px 2px 2px #000;
+      margin: 5px;
+      background-color:rgba(000,000,000,0.8);
+    }
+    h1 {
+      color: #E00D00;
+      font-family: "Almendra sc";
+      padding: 20px;
+    }
+    h1 span {
+      color: #FFFFFF;
+    }
+    h2 {
+      color: #FF0C00;
+      font-family: "Almendra sc";
+      padding: 10px;
+    }
+    h2 span {
+      color: #FFFFFF;
+    }
+    .pesan {
+      color: ;#FF0008
+      font-family: 'Rawdies', cursive;
+      text-shadow: 1px 1px 2px #000000;
+      font-weight: 600;
+      border: 1px solid #FFFFFF;
+      border-radius: 3px;
+      box-shadow: 2px 2px 2px #FFFFFF;
+      margin: 5px;
+      background-color:rgba(000,000,000,0.8);
+    }
+    .pesan span {
+      color: #FF0200;
+    }
+    .btn {
+      border: 1px solid #ff0000;
+      padding: 5px;
+      border-radius: 3px;
+      background: transparent;
+      color: #FF1400;
+      font-weight: 800;
+      box-shadow: 2px 2px 1px #a00000;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #000000;
+      color: ;#000000
+      border: 1px solid #fff;
+      box-shadow: 2px 2px 1px #5e5e5e;
+      border-radius: 3px;
+    }
+    p {
+      color: #FF1F00;
+    }
+    .thanks {
+      color: #FF000B;
+      font-weight: 800;
+      border: 1px solid #fff;
+      border-radius: 3px;
+      font-family: "Almendra SC";
+      margin: 5px;
+      text-shadow: 1px 2px 2px #000;
+    }
+    .thanks span {
+      color: #FFFFFF;
+    }
+    .footer {
+      color: #FFFFFF;
+      font-family: "Almendra SC";
+      font-size: 1em;
+      font-weight: 600;
+      padding: 20px;
+      text-shadow: 1px 1px 2px #000;
+    }
+    .footer span {
+      color: #FFFFFF;
+    }
+  </style>
+  <script>function play(){ var audio = document.getElementById("lagu"); audio.play();}function pause(){ var audio = document.getElementById("lagu"); audio.pause();}</script>
+
+  <!-- Main Container -->
+  <body>
+<script>
+document.getElementById('autoplay').play();
+</script>
+    <div class="container">
+      <img src="https://g.top4top.io/p_2043azcpw0.jpg" alt="FUCEK">
+      <h1>Hacked by <span>Mrlinkerrorsystem</span></h1>
+      <marquee width="50%" scrollamount="40" direction="left"><font style="color:red;">___________________________</font></marquee>
+      <marquee width="50%" scrollamount="40" direction="right"><font style="color:red;">___________________________</font></marquee>
+      <h2 class="pesan">Pleasure of love lasts but a moment, Pain of love lasts a lifetime.</h2>
+      <marquee width="50%" scrollamount="40" direction="right"><font style="color:red;">___________________________</font></marquee>
+      <marquee width="50%" scrollamount="40" direction="left"><font style="color:red;">___________________________</font></marquee>
+      <h2 class="pesan">Kebahagiaan karena cinta hanya berlangsung sekejap saja, namun kekecewaan karena cinta berlangsung selamanya.</h2>
+      <marquee width="50%" scrollamount="40" direction="right"><font style="color:red;">___________________________</font></marquee>
+      <marquee width="50%" scrollamount="40" direction="left"><font style="color:red;">___________________________</font></marquee>
+      <h2>.::[ <span>What This Security</span> ]::.</h2>
+      <button class="btn" onclick="play()"><font size="3">PLAY</font> </button>&nbsp;&nbsp;<button class="btn" onclick="pause()"><font size="3">PAUSE</font></button>&nbsp;&nbsp; <audio id="lagu" src="https://b.top4top.io/m_2504j7imw1.mp3"></audio><br></body>
+      <p class="footer"><span>Aku Sayang</span> Kamu</p>
+    </div>
+  </body>
+</html>
